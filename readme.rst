@@ -27,10 +27,11 @@ PROBLEM STATEMENT
 MATERIALS AND METHODS
 ---------------------
 
-Initially, source data was presented as an array, consisting of mixed type variables, quantitative and qualitative ones, that describe
-the morphological featrues of six `Df`-species and environmental conditions of its collecting places. The array's shape was 589x33 (totally, 589 items were used in analysis).
-The number of columns, i.e. 33,  accounted the number of item features, including its species, leaves/... morphological features etc.
-Quantitative features consisted of the following variables: ['L1p1l','L1p2l','W1p1l','W1p2l','L2p3l','L2p4l','W2p3l','W2p4l',
+Initially, source data was represented as an array, consisting of mixed type variables, quantitative and qualitative ones, that describe
+the morphological featrues of six `Df`-species and environmental conditions of its collecting places. The array's shape was 589x47 (totally, 589 items were used in the analysis below).
+The number of columns, i.e. 33,  accounted the number of item features, including its species, leaves/... morphological parameters etc.
+
+Quantitative features were presented as a set of the following variables: ['L1p1l','L1p2l','W1p1l','W1p2l','L2p3l','L2p4l','W2p3l','W2p4l',
 'S2p3l','S2p4l','Lkd','Wkd','OtnWLkd','Dvsh','Dosh','Lp','Dpl','Lns','Wns','Lvs','Wvs']
 
 
@@ -45,5 +46,46 @@ Quantitative features consisted of the following variables: ['L1p1l','L1p2l','W1
 +----------------------------------------------+--------------------+
 
 
+A subset of qualitative features consisted of ['Dp','Dvl','Dnl','Dc','Dvns','Dnns','Dvvs','Dnvs','Сp', 'Ef'] variables, their meanings presented in the table below:
+
++-----------------------------------------------+-------------------+
+| Full description of qualitative variables goes| here              |
++----------------------------------------------+--------------------+
+| Variable abbreviation                        | Description        |
++----------------------------------------------+--------------------+
+| Dp                                           | Variable meaning   |
++----------------------------------------------+--------------------+
+| etc.                                         |                    |
++----------------------------------------------+--------------------+
+
+And, finally, a subset of variables representing environmental conditions was following:
+
++------------------------------------------------------+-------------+
+| Table of environmental variables and its descriptions|             |
++------------------------------------------------------+-------------+
+| Variable abbreviation                                | Description |
++------------------------------------------------------+-------------+
+| IC                                                   | Var. meaning|
++------------------------------------------------------+-------------+
+| etc.                                                 |             |
++------------------------------------------------------+-------------+
+
+
+Computational environment
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+Data preparation
+~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+REFERENCES
+----------
 
 
