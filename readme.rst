@@ -33,11 +33,11 @@ The number of columns, i.e. 33,  accounted the number of item features, includin
 Quantitative features consisted of the following variables: ['L1p1l','L1p2l','W1p1l','W1p2l','L2p3l','L2p4l','W2p3l','W2p4l',
 'S2p3l','S2p4l','Lkd','Wkd','OtnWLkd','Dvsh','Dosh','Lp','Dpl','Lns','Wns','Lvs','Wvs']
 
-+----------------------------------------------+------+
-| Full description of numerical variables goes | here |
-+----------------------------------------------+------+
-| Variable abbreviation                 | Description |
-+==============================================+======+
++----------------------------------------------+-------------+
+| Full description of numerical variables goes | here        |
++----------------------------------------------+-------------+
+| Variable abbreviation                        | Description |
++==============================================+=============+
 | L1p1l  | What this variable means...  |
 +--------+------------------------------+
 | L1p2l  | What this variable means...  |
