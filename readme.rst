@@ -16,6 +16,7 @@ Principal structure
 
 * Data analysis
 
+
 PROBLEM STATEMENT
 -----------------
 
@@ -74,7 +75,11 @@ And, finally, a subset of variables representing environmental conditions was fo
 Computational environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+As an environment for perforiming all kinds of statistical computations and data processing activities, we used built-on-top 
+of the Python programming language computational ecosystem, that included: a couple of SciPy/NumPy (ref. to. scipy) packages for fast arrays handling in Python,
+Scikit-Learn package (ref.to.sklearn) as a mordern machine learning toolset (we used some common data preprocessing features (scaling and qualitative features encoding), 
+and implementation of the adaptive CART algorithm for decision tree building), as well Matplotlib (ref.to.matplotlib) and Seaborn (ref.to.seabornifexists) 
+packages for results visualizations.
 
 
 Data preparation
