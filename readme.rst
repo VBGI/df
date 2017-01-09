@@ -39,7 +39,8 @@ Quantitative features consisted of the following variables: ['L1p1l','L1p2l','W1
 +----------------------------------------------+-------------+
 | Variable abbreviation                        | Description |
 +----------------------------------------------+-------------+
-
+| L1p1l                                        | Var. descr. |
++----------------------------------------------+-------------+
 
 
 
