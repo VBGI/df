@@ -29,8 +29,9 @@ MATERIALS AND METHODS
 ---------------------
 
 Initially, source data was represented as an array, consisting of mixed type variables, quantitative and qualitative ones, that describe
-the morphological featrues of six `Df`-species and environmental conditions of its collecting places. The array's shape was 589x47 (totally, 589 items were used in the analysis below).
-The number of columns, i.e. 33,  accounted the number of item features, including its species, leaves/... morphological parameters etc.
+the morphological featrues of six `Df`-species and environmental conditions of its collecting places. The array's shape was 590x46 (totally, 589 items were used in the analysis below).
+The number of columns, i.e. 46,  accounted the number of item features, including its species, leaves/... morphological parameters, as well auxiliary
+parameters, which are item identifier (ID) etc.
 
 Quantitative features were presented as a set of the following variables: ['L1p1l','L1p2l','W1p1l','W1p2l','L2p3l','L2p4l','W2p3l','W2p4l',
 'S2p3l','S2p4l','Lkd','Wkd','OtnWLkd','Dvsh','Dosh','Lp','Dpl','Lns','Wns','Lvs','Wvs']
@@ -66,24 +67,33 @@ And, finally, a subset of variables representing environmental conditions was fo
 +------------------------------------------------------+-------------+
 | Variable abbreviation                                | Description |
 +------------------------------------------------------+-------------+
-| IC                                                   | Var. meaning|
+| ALT                                                  | Var. meaning|
 +------------------------------------------------------+-------------+
-| etc.                                                 |             |
+| IC etc.                                              |             |
 +------------------------------------------------------+-------------+
 
 
 Computational environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As an environment for perforiming all kinds of statistical computations and data processing activities, we used built-on-top 
-of the Python programming language computational ecosystem, that included: a couple of SciPy/NumPy (ref. to. scipy) packages for fast arrays handling in Python,
+As an environment for perforiming all kinds of statistical computations and data processing activities, we used built on top 
+of the Python programming language computational ecosystem, that included: a couple of SciPy/NumPy (ref. to. scipy) packages for fast arrays handling,
 Scikit-Learn package (ref.to.sklearn) as a mordern machine learning toolset (we used some common data preprocessing features (scaling and qualitative features encoding), 
-and implementation of the adaptive CART algorithm for decision tree building), as well Matplotlib (ref.to.matplotlib) and Seaborn (ref.to.seabornifexists) 
-packages for results visualizations.
+and implementation of the adaptive CART algorithm for decision tree building), Pandas (ref.to.pandas project) for performing I/O operations and data cleaning,
+as well Matplotlib (ref.to.matplotlib) and Seaborn (ref.to.seabornifexists)  packages for results visualization.
 
 
 Data preparation
 ~~~~~~~~~~~~~~~~
+
+Data preparation operations included: 1) data cleaning, 2) quantitative features scaling/shifting, 3) qualitative features encoding.
+During automatic data cleaning all rows, that included not-a-number or non-existing values were removed from the dataset. The only one
+item with non-exisiting value was removed during this stage.
+
+Scaling and shifting procedure was applied to all quantitative columns in the dataset. It consisted in removing the mean and scaling 
+to unity standard deviation.
+
+To encode qulitative features, we used OneHotEncoder from the Scikit-Learn package. It allowed to extend all qualitative columns according ... 
 
 
 
