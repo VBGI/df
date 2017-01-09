@@ -38,7 +38,7 @@ Quantitative features consisted of the following variables: ['L1p1l','L1p2l','W1
 | Full description of numerical variables goes | here        |
 +----------------------------------------------+-------------+
 | Variable abbreviation                        | Description |
-+==============================================+=============+
++----------------------------------------------+-------------+
 
 
 
