@@ -111,7 +111,7 @@ that yeilded to classification tree of the followign form (see fig.1)
 
 .. class:: no-web
 
-   .. image:: https://raw.githubusercontent.com/vbgi/df/images_final/dtree_simple.png
+   .. image:: https://raw.githubusercontent.com/vbgi/df/master/images_final/dtree_simple.png
        :alt: Decision tree built with help of the CART algo
        :width: 100%
        :align: center  
