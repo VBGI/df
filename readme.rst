@@ -115,7 +115,7 @@ that yeilded to classification tree of the followign form (see fig.1)
        :alt: Decision tree built with help of the CART algo
        :width: 100%
        :align: center  
-      
+       :caption: Nothing      
 
 
 
