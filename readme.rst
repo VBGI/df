@@ -116,11 +116,12 @@ that yeilded to classification tree of the followign form (see fig.1)
        :width: 100%
        :align: center  
       
-
-
-
-
-
+It is common, when constructing a decision tree, to prune it to reduce the number of its sections and size (ref.to.some lit). Moreover, 
+decision tree pruning is used to avoid cassifier overfitting problem. Looking on the fig.1 we could yield, that the tree is overfitted and needed to be pruned, but that isn't the case. Due to internal structure of the dataset we obtained a perfect decision tree, that doesn't need any pruning.
+It is worth noting, that we couldn't estimate classification accuracy in this case.
+More precisely, if we would try to do this, classification accuracy would be 1.0, that means no misclassification cases can occur. 
+A subset of qualitative features selected by the CART algorithm distinguishes the source dataset in a consistent way, with no contradictions. If we assume the dataset is representative, we don't need to make any further investigations: we have got a good decision tree,
+that can be used to precisely determine `df`-species by their morphological features. 
 
 
 REFERENCES
