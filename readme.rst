@@ -109,12 +109,13 @@ a binary decision tree. When all the morphological features were used, we led to
 the set of qualitative features only. The algorithm automatically selected a relatively small subset of morphological parameters,
 that yeilded to classification tree of the followign form (see fig.1)
 
-    .. image:: https://raw.githubusercontent.com/vbgi/df/images_final/dtree_simple.png
-        :alt: Decision tree built with help of the CART algo
-        :width: 100%
-        :align: center  
-        :caption: Binary decision tree built for df-species classifying
+.. class:: no-web
 
+   .. image:: https://raw.githubusercontent.com/vbgi/df/images_final/dtree_simple.png
+       :alt: Decision tree built with help of the CART algo
+       :width: 100%
+       :align: center  
+      
 
 
 
