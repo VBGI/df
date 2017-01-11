@@ -77,7 +77,7 @@ Computational environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As an environment for perforiming all kinds of statistical computations and data processing activities, we used built on top 
-of the Python programming language computational ecosystem, that included: a couple of SciPy/NumPy (ref. to. scipy) packages for fast arrays handling,
+of the Python programming language computational ecosystem, that included: SciPy/NumPy (ref. to. scipy) packages, the couple for fast arrays handling,
 Scikit-Learn package (ref.to.sklearn) as a mordern machine learning toolset (we used some common data preprocessing features (scaling and qualitative features encoding), 
 and implementation of the adaptive CART algorithm for decision tree building), Pandas (ref.to.pandas project) for performing I/O operations and data cleaning,
 as well Matplotlib (ref.to.matplotlib) and Seaborn (ref.to.seabornifexists)  packages for results visualization.
@@ -88,12 +88,34 @@ Data preparation
 
 Data preparation operations included: 1) data cleaning, 2) quantitative features scaling/shifting, 3) qualitative features encoding.
 During automatic data cleaning all rows, that included not-a-number or non-existing values were removed from the dataset. The only one
-item with non-exisiting value was removed during this stage.
+item with a non-exisiting value was removed during this stage.
 
 Scaling and shifting procedure was applied to all quantitative columns in the dataset. It consisted in removing the mean and scaling 
 to unity standard deviation.
 
-To encode qulitative features, we used OneHotEncoder from the Scikit-Learn package. It allowed to extend all qualitative columns according ... 
+To encode qulitative features, we used one-hot encoding transform from the Scikit-Learn package. This, in turn, led to
+extending the number of the data table columns related to qualitative features. 
+
+We didn't use any of dimensinality reduction approaches, because they lead to smoothing the feature meanings, that are important 
+when dealing with building taxonomic 
+
+
+Decision tree building
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+We used an optimized version of the CART algorithm implemented in the Scikit-Learn package(ref.to.sklearn) to construct 
+a binary decision tree. When all the morphological features were used, we led to a quite simple tree, that exploited
+the set of qualitative features only. The algorithm automatically selected a relatively small subset of morphological parameters,
+that yeilded to classification tree of the followign form (see fig.1)
+
+    .. image:: https://raw.githubusercontent.com/vbgi/df/master/images_final/dtree_simple.png
+        :alt: Decision tree built with help of the CART algo
+        :width: 100%
+        :align: center  
+        :caption: Binary decision tree built for df-species classifying
+
+
 
 
 
